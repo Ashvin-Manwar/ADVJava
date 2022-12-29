@@ -64,7 +64,6 @@ public class LL {
 
         Node node = new Node(val, temp.next);
         temp.next = node;
-
         size++;
     }
 
@@ -83,12 +82,10 @@ public class LL {
         return node;
     }
 
-
     public int deleteLast() {
         if (size <= 1) {
             return deleteFirst();
         }
-
         Node secondLast = get(size - 2);
         int val = tail.value;
         tail = secondLast;
@@ -104,10 +101,8 @@ public class LL {
         if (index == size - 1) {
             return deleteLast();
         }
-
         Node prev = get(index - 1);
         int val = prev.next.value;
-
         prev.next = prev.next.next;
         size--;
         return val;
