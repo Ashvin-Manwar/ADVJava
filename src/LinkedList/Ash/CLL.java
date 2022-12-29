@@ -40,7 +40,6 @@ public class CLL {
         if (node == null) {
             return;
         }
-
         if (head == tail){
             head = null;
             tail = null;
